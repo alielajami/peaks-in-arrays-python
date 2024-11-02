@@ -10,7 +10,7 @@ def find_peaks(array):
     ''' Function to find peaks in an array '''
     peaks = []
     for j in range(1, len(array) - 1):
-        if array[j] > array[j - 1] and array[i] > array[j + 1]:
+        if array[j] > array[j - 1] and array[j] > array[j + 1]:
             peaks.append(array[j])
     return peaks
 
